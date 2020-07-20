@@ -8,3 +8,5 @@ A test post from Netlify CMS.
 ## Hello World
 
 The quick brown fox jumps over the lazy dog.
+
+![React JS](/img/reactjs.jpg "React JS")
