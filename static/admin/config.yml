@@ -7,17 +7,14 @@ publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
 
-logo_url: https://www.gatsbyjs.org/monogram.svg
-
 collections:
   - name: "posts"
     label: "Posts"
     label_singular: "Post"
     folder: "posts/"
-    media_folder: ""
-    public_folder: ""
+    media_folder: "../static/img"
+    public_folder: "/img"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     path: "{{title}}-{{year}}-{{month}}-{{day}}"
     editor:
       preview: false
