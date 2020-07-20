@@ -1,0 +1,24 @@
+backend:
+  name: test-repo
+  branch: master
+
+publish_mode: editorial_workflow
+
+media_folder: static/img
+public_folder: /img
+
+logo_url: https://www.gatsbyjs.org/monogram.svg
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    label_singular: "Post"
+    folder: "posts/"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    path: "{{title}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
