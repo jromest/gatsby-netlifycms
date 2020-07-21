@@ -3,7 +3,7 @@ title: The Road Not Taken
 date: 2020-07-21T09:21:57.353Z
 description: By Robert Frost
 ---
-![Road in woody path with two people standing](road.jpg "Road")
+![Road in woody path with two people skating](road.jpg "Road")
 
 Two roads diverged in a yellow wood,\
 And sorry I could not travel both\
