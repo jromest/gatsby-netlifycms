@@ -15,7 +15,7 @@ collections:
     media_folder: ""
     public_folder: ""
     create: true
-    slug: "{{title}}"
+    slug: "index"
     path: "{{title}}-{{year}}-{{month}}-{{day}}/index"
     editor:
       preview: false
