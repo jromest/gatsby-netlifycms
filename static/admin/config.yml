@@ -11,12 +11,12 @@ collections:
   - name: "posts"
     label: "Posts"
     label_singular: "Post"
-    folder: "posts/"
-    media_folder: "../static/img"
-    public_folder: "/img"
+    folder: "content/posts"
+    media_folder: ""
+    public_folder: ""
     create: true
-    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
-    path: "{{title}}-{{year}}-{{month}}-{{day}}"
+    slug: "index"
+    path: "{{title}}-{{year}}-{{month}}-{{day}}/index"
     editor:
       preview: false
     fields:

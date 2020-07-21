@@ -15,21 +15,26 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/static/img`,
-        name: `images`
+        path: `${__dirname}/content/posts`,
+        name: `posts`
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/posts`,
-        name: `posts`
+        path: `${__dirname}/content/assets`,
+        name: `assets`
       }
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: `gatsby-remark-relative-images`
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -48,8 +53,6 @@ module.exports = {
         ]
       }
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -59,7 +62,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `static/img/gatsby-icon.png`
+        icon: `content/assets/gatsby-icon.png`
       }
     },
     `gatsby-plugin-react-helmet`,
